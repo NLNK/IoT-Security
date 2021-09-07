@@ -39,5 +39,3 @@ erase:
 clean: 
 	rm -f *.ld *.co *.o *.elf *.map *.bin
 
-#arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -nostartfiles -T obj_cc2538dk/cc2538.ld -Wl,-Map=cc2538-demo-cc2538dk.map,--cref,--no-warn-mismatch -Wl,--gc-sections obj_cc2538dk/startup-gcc.o cc2538-demo.co contiki-cc2538dk.a -o cc2538-demo.elf
-#arm-none-eabi-cpp -imacros "contiki-conf.h" -P -E cc2538.lds -o obj_cc2538dk/cc2538.ld
